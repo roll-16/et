@@ -1,0 +1,90 @@
+ex 1:
+sudo apt-get install nmap
+nmap www.geeksforgeeks.org
+nmap 172.217.27.174
+nmap -v www.geeksforgeeks.org
+nmap 103.76.228.*
+
+---------------------------------------------------------------
+
+ex 2:
+sudo apt-get install nmap
+nmap -p 80 192.168.20.128
+nmap -p 1-65535 localhost
+nmap -sP 192.168.2.1/24
+
+------------------------------------------------------------------
+
+ex 3:
+sudo apt install enum4linux
+sudo snap install enum4linux
+-h for help
+enum4linux -a  192.168.0.104 
+
+---------------------------------------------------------------------
+
+ex 4:
+sudo apt update
+sudo apt install ruby-full
+sudo gem install wpscan
+wpscan --version
+wpscan --url  http://your-website.com
+
+---------------------------------------------------------------------
+
+ex 5:
+sudo apt install nikto
+nikto -h https://www.google.com
+nikto -h pbs.org -ssl
+
+---------------------------------------------------------------------
+
+ex 6:
+sudo apt-get update
+sudo apt-get install -y snort
+sudo apt install -y snort
+git clone https://github.com/snort3/snort3.git
+sudo snort -d -l /var/log/snort/ -h 192.168.0.102/24 -A console -c /etc/snort/snort.conf
+
+-----------------------------------------------------------------------------
+
+ex 7:
+sudo apt update
+sudo apt-get update
+sudo apt-get install sqlmap
+sudo snap install sqlmap
+python3 -m pip show sqlmap
+sudo pip3 install sqlmap
+sudo apt install python3-pip
+sudo apt-get install python3
+sqlmap --url http://www.site.com/vuln.php?id=1
+sqlmap -u http://testphp.vulnweb.com/listproducts.php?cat=1 --dbs
+
+-----------------------------------------------------------------------------------------
+
+ex 8:
+sudo apt-get install netsniff-ng
+sudo apt-get install -y netsniff-ng
+sudo netsniff-ng
+
+--------------------------------------------------------------------------------------------
+
+ex 9:
+@echo off
+echo Detecting Viruses......
+:start
+cd C:\
+IF EXIST swing.bat goto infected
+IF NOT EXIST virus.bat goto clean
+:infected
+echo WARNING SWING.BAT VIRUS DETECTED!
+del swing.bat
+pause
+goto start
+:clean
+echo your System is secure now and virus has been deleted!
+pause
+exit
+
+
+%O|%O
